@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Carculadora">
+
+    <!-- Título de la calculadora -->
+    <TextView
+        android:id="@+id/txtTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora"
+        android:textSize="24sp"
+        android:textColor="@android:color/holo_blue_dark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"/>
+
+    <!-- Display -->
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/panel"
+        android:textSize="32sp"
+        android:gravity="center"
+        android:layout_below="@id/txtTitulo"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Botones de la calculadora en un GridLayout para mejor organización -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/display"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:columnCount="4">
+
+        <!-- Primera fila de botones -->
+        <Button
+            android:id="@+id/btn7"
+            android:text="@string/_7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn8"
+            android:text="@string/_8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn9"
+            android:text="@string/_9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btnDivision"
+            android:text="@string/dividir"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <!-- Segunda fila de botones -->
+        <Button
+            android:id="@+id/btn4"
+            android:text="@string/_4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn5"
+            android:text="@string/_5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn6"
+            android:text="@string/_6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btnMulti"
+            android:text="@string/multiplicar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <!-- Tercera fila de botones -->
+        <Button
+            android:id="@+id/btn1"
+            android:text="@string/_1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn2"
+            android:text="@string/_2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btn3"
+            android:text="@string/_3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btnRestar"
+            android:text="@string/restar"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <!-- Cuarta fila de botones -->
+        <Button
+            android:id="@+id/btn0"
+            android:text="@string/_0"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/btnPunto"
+            android:text="@string/decimal"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <Button
+            android:id="@+id/btnIgual"
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:text="@string/igual" />
+        <Button
+            android:id="@+id/btnSumar"
+            android:text="@string/suma"
+            android:layout_width="80dp"
+            android:layout_height="80dp"/>
+
+        <!-- Botón Clear -->
+        <Button android:id="@+id/btnClear"
+            android:text="@string/ce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnSpan="4"/>
+    </GridLayout>
+</RelativeLayout>
